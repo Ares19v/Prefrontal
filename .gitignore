@@ -1,0 +1,60 @@
+# Environment — never commit keys
+.env
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node
+node_modules/
+.next/
+out/
+build/
+dist/
+.npm
+.eslintcache
+.stylelintcache
+.prettiercache
+
+# Vector DB local cache
+chroma_db/
+.pinecone/
+
+# Knowledge base PDFs (large files)
+knowledge_base/books/*.pdf
+knowledge_base/papers/*.pdf
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
