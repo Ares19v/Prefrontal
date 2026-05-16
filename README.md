@@ -1,6 +1,5 @@
 <div align="center">
 
-![Prefrontal Hero](prefrontal_hero_image_1778907533730.png)
 
 # Prefrontal
 
