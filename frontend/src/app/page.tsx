@@ -7,8 +7,8 @@ import NeuralLoader from "@/components/NeuralLoader";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
-  const [explanation, setExplanation] = useState<any>(null);
-  const [retrievalMeta, setRetrievalMeta] = useState<any>(null);
+  const [explanation, setExplanation] = useState<Record<string, unknown> | null>(null);
+  const [retrievalMeta, setRetrievalMeta] = useState<Record<string, unknown> | null>(null);
   const resultRef = useRef<HTMLDivElement>(null);
 
   const handleExplain = async (query: string) => {

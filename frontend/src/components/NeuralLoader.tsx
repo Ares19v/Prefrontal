@@ -3,14 +3,23 @@
 import React from "react";
 
 export default function NeuralLoader() {
+  const positions = [
+    { left: "10%", top: "20%" },
+    { left: "80%", top: "30%" },
+    { left: "40%", top: "70%" },
+    { left: "20%", top: "80%" },
+    { left: "70%", top: "80%" },
+    { left: "50%", top: "10%" },
+  ];
+
   return (
     <div className="neural-loader">
       <div className="nodes">
-        {[...Array(6)].map((_, i) => (
+        {positions.map((pos, i) => (
           <div key={i} className="node" style={{ 
             animationDelay: `${i * 0.2}s`,
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`
+            left: pos.left,
+            top: pos.top
           }} />
         ))}
       </div>
