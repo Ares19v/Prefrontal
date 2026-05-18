@@ -69,8 +69,7 @@ jobs:
           python -c "
           import os, sys, json
 
-          ROOT = os.path.dirname(os.path.abspath('backend'))
-          SEED_PATH = os.path.join(ROOT, 'knowledge_base', 'curated', 'seed.json')
+          SEED_PATH = os.path.join('..', 'knowledge_base', 'curated', 'seed.json')
 
           print('--- Test: seed.json schema validation ---')
           with open(SEED_PATH, 'r', encoding='utf-8') as f:
