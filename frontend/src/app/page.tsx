@@ -2,13 +2,19 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import InputPanel from "@/components/InputPanel";
-import ExplanationCard from "@/components/ExplanationCard";
+import ExplanationCard, { ExplanationData } from "@/components/ExplanationCard";
 import NeuralLoader from "@/components/NeuralLoader";
+
+interface RetrievalMeta {
+  chunks_used: number;
+  retrieval_ms: number;
+  [key: string]: unknown;
+}
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
-  const [explanation, setExplanation] = useState<Record<string, unknown> | null>(null);
-  const [retrievalMeta, setRetrievalMeta] = useState<Record<string, unknown> | null>(null);
+  const [explanation, setExplanation] = useState<ExplanationData | null>(null);
+  const [retrievalMeta, setRetrievalMeta] = useState<RetrievalMeta | null>(null);
   const resultRef = useRef<HTMLDivElement>(null);
 
   const handleExplain = async (query: string) => {

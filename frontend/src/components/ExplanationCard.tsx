@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import SourceBadge from "./SourceBadge";
 
-interface ExplanationData {
+export interface ExplanationData {
   title: string;
   modern_trigger: string;
   ancestral_mechanism: string;
