@@ -6,7 +6,8 @@ pydantic==2.7.1
 # LangChain core
 langchain==0.2.1
 langchain-community==0.2.1
-langchain-google-genai==1.0.5
+langchain-groq==0.1.6
+langchain-text-splitters==0.2.0
 
 # Embeddings (local, free)
 sentence-transformers==3.0.0

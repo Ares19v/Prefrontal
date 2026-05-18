@@ -7,6 +7,7 @@
 
 *A high-fidelity RAG-powered platform designed to decode the biological legacy of our ancient brain using Groq LLMs and Pinecone vector search.*
 
+[![CI](https://github.com/Ares19v/Prefrontal/actions/workflows/ci.yml/badge.svg)](https://github.com/Ares19v/Prefrontal/actions/workflows/ci.yml)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=flat&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![Groq](https://img.shields.io/badge/LLM-Groq%20Llama%203.3-orange?style=flat)](https://groq.com/)
@@ -74,7 +75,7 @@ The system employs a **Retrieval-Augmented Generation (RAG)** architecture. When
 
 | Layer | Technology | Purpose |
 |-------|-----------|---------|
-| **Frontend** | Next.js 16 (App Router) | High-performance, SEO-friendly UI with React 19. |
+| **Frontend** | Next.js 15 (App Router) | High-performance, SEO-friendly UI with React 19. |
 | **Backend** | FastAPI (Python 3.11+) | Asynchronous API for low-latency RAG processing. |
 | **LLM Engine** | Groq (Llama-3.3-70b) | Ultra-fast inference with 70B parameter precision. |
 | **Vector DB** | Pinecone | Serverless vector index for semantic retrieval. |
@@ -150,6 +151,19 @@ The project includes a robust automation suite to handle environment setup.
 
 ---
 
+## Docker Deployment
+
+Prefrontal can be fully orchestrated using Docker Compose. This starts both the FastAPI backend and Next.js frontend in production mode.
+
+1. Create your `backend/.env` file.
+2. Build and run the containers:
+   ```bash
+   docker-compose up --build -d
+   ```
+3. The app is now running at `http://localhost:3000`.
+
+---
+
 ## Configuration
 
 | Variable | Description |
@@ -157,7 +171,6 @@ The project includes a robust automation suite to handle environment setup.
 | `GROQ_API_KEY` | Your Groq API key for Llama-3.3 inference. |
 | `PINECONE_API_KEY` | Your Pinecone API key. |
 | `PINECONE_INDEX_NAME` | The name of your serverless index (default: `prefrontal-knowledge`). |
-| `GEMINI_API_KEY` | (Optional) Fallback key for Google Gemini models. |
 
 ---
 

@@ -1,0 +1,129 @@
+name: CI
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+    branches: ["main", "master"]
+
+jobs:
+  # ── Job 1: Frontend lint ─────────────────────────────────────────────────────
+  frontend-lint:
+    name: Frontend — Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        working-directory: ./frontend
+        run: npm ci
+
+      - name: Run ESLint
+        working-directory: ./frontend
+        run: npm run lint
+
+  # ── Job 2: Backend — schema & static tests (no API keys needed) ──────────────
+  backend-test:
+    name: Backend — Schema & Static Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: backend/requirements.txt
+
+      - name: Install dependencies
+        working-directory: ./backend
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Write dummy .env for static tests
+        working-directory: ./backend
+        run: |
+          echo "GROQ_API_KEY=gsk_dummy_key_for_ci_only" >> .env
+          echo "PINECONE_API_KEY=pcsk_dummy_key_for_ci_only" >> .env
+          echo "PINECONE_INDEX_NAME=prefrontal-knowledge" >> .env
+          echo "GROQ_MODEL=llama-3.3-70b-versatile" >> .env
+
+      - name: Run static tests (env + seed schema — no network required)
+        env:
+          PYTHONUTF8: "1"
+        run: |
+          cd backend
+          python -c "
+          import os, sys, json
+
+          ROOT = os.path.dirname(os.path.abspath('backend'))
+          SEED_PATH = os.path.join(ROOT, 'knowledge_base', 'curated', 'seed.json')
+
+          print('--- Test: seed.json schema validation ---')
+          with open(SEED_PATH, 'r', encoding='utf-8') as f:
+              seed_data = json.load(f)
+
+          REQUIRED = ['id', 'behavior', 'modern_trigger', 'ancestral_mechanism',
+                      'brain_region', 'brain_chemistry', 'the_insight', 'tags', 'sources']
+
+          errors = []
+          for i, entry in enumerate(seed_data):
+              missing = [f for f in REQUIRED if f not in entry]
+              if missing:
+                  errors.append(f'Entry {i} missing: {missing}')
+
+          ids = [e.get('id') for e in seed_data]
+          if len(set(ids)) < len(ids):
+              errors.append('Duplicate IDs found')
+
+          if errors:
+              for e in errors:
+                  print(f'FAIL: {e}')
+              sys.exit(1)
+          else:
+              print(f'PASS: All {len(seed_data)} seed entries are valid.')
+              print('PASS: All IDs are unique.')
+          "
+
+  # ── Job 3: Docker build validation ──────────────────────────────────────────
+  docker-build:
+    name: Docker — Build Validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build backend image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./backend
+          push: false
+          tags: prefrontal-backend:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Build frontend image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./frontend
+          push: false
+          tags: prefrontal-frontend:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

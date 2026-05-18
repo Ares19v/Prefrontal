@@ -51,7 +51,7 @@ def _sse(data: dict) -> str:
 async def _async_stream(query: str, context: str, sources: list[str]):
     """Wrap the sync generator in an async one."""
     import asyncio
-    loop = asyncio.get_event_loop()
+    loop = asyncio.get_running_loop()
     gen = llm.stream(query, context, sources)
     # The stream() method is a sync generator — iterate it
     for event in gen:

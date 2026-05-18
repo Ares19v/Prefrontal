@@ -77,10 +77,6 @@ export default function Home() {
   return (
     <main className="container">
       <div className="hero-section fade-in">
-        <div className="badge">
-          <span>✨</span> Most powerful Evolutionary AI Explainer
-        </div>
-        
         <h1 className="title">Biological legacy of our<br/>ancient brain</h1>
 
         <div className="search-container">
@@ -137,21 +133,6 @@ export default function Home() {
           text-align: center;
           width: 100%;
           margin-bottom: 2rem;
-        }
-
-        .badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 0.5rem;
-          padding: 0.5rem 1rem;
-          background: rgba(255, 255, 255, 0.05);
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          border-radius: 100px;
-          font-family: var(--font-inter);
-          font-size: 0.85rem;
-          color: var(--foreground);
-          margin-bottom: 2rem;
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
 
         .title {

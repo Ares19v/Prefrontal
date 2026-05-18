@@ -30,7 +30,7 @@ echo  [1/2] Starting FastAPI backend on http://localhost:8000 ...
 start "Prefrontal Backend" cmd /k "cd /d %~dp0backend && call venv\Scripts\activate && echo Backend ready. && uvicorn main:app --reload --port 8000 --host 127.0.0.1"
 
 :: Small delay so backend starts loading the embedding model first
-timeout /t 3 /nobreak >nul
+timeout /t 5 /nobreak >nul
 
 echo  [2/2] Starting Next.js frontend on http://localhost:3000 ...
 start "Prefrontal Frontend" cmd /k "cd /d %~dp0frontend && echo Frontend ready. && npm run dev"

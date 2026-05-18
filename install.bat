@@ -41,9 +41,6 @@ call backend\venv\Scripts\activate
 pip install --upgrade pip -q
 pip install -r backend\requirements.txt
 
-:: Install langchain-groq explicitly (may not be in requirements.txt)
-pip install langchain-groq -q
-
 if %ERRORLEVEL% NEQ 0 (
     echo  [ERROR] pip install failed. Check error output above.
     pause
