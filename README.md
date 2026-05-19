@@ -174,8 +174,7 @@ Prefrontal can be fully orchestrated using Docker Compose. This starts both the 
 
 ---
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-**Author:** [Ares19v](https://github.com/Ares19v)
+---
+<p align="center">
+  Made by Devansh Tyagi @ 2026
+</p>
