@@ -10,21 +10,31 @@ load_dotenv()
 _model = None
 
 
-def get_model():
-    global _model
-    if _model is None:
-        _model = ChatGroq(
-            model=os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"),
-            api_key=os.getenv("GROQ_API_KEY"),
-            temperature=0.4,
-            max_tokens=1024,
-        )
-    return _model
+FALLBACK_MODELS = [
+    os.getenv("GROQ_MODEL", "openai/gpt-oss-120b"),
+    "openai/gpt-oss-20b",
+    "qwen/qwen3.6-27b"
+]
+
+
+def get_model(model_name: str = None):
+    chosen_model = model_name or os.getenv("GROQ_MODEL", "openai/gpt-oss-20b")
+    return ChatGroq(
+        model=chosen_model,
+        api_key=os.getenv("GROQ_API_KEY"),
+        temperature=0.4,
+        max_tokens=1024,
+        model_kwargs={"response_format": {"type": "json_object"}}
+    )
 
 
 def _clean_json(raw: str) -> str:
-    """Strip markdown fences if the model wraps JSON in them."""
+    """Extract and clean the first valid JSON block {...}."""
+    import re
     raw = raw.strip()
+    match = re.search(r"(\{.*\})", raw, re.DOTALL)
+    if match:
+        return match.group(1).strip()
     if raw.startswith("```"):
         parts = raw.split("```")
         raw = parts[1] if len(parts) > 1 else raw
@@ -39,42 +49,60 @@ class GroqClient:
         Non-streaming: generate a full structured JSON explanation.
         Returns parsed dict or raises on failure.
         """
-        model = get_model()
         prompt = RAG_PROMPT_TEMPLATE.format(context=context, query=query)
-
         messages = [
             SystemMessage(content=SYSTEM_PROMPT),
             HumanMessage(content=prompt),
         ]
 
-        response = model.invoke(messages)
-        raw = _clean_json(response.content)
+        for m_name in FALLBACK_MODELS:
+            try:
+                model = get_model(m_name)
+                response = model.invoke(messages)
+                raw = _clean_json(response.content)
+                parsed = json.loads(raw)
+                if not parsed.get("sources") and sources:
+                    parsed["sources"] = sources
+                return parsed
+            except Exception:
+                continue
 
-        parsed = json.loads(raw)
-        if not parsed.get("sources") and sources:
-            parsed["sources"] = sources
-
-        return parsed
+        raise RuntimeError("All Groq models failed to generate response.")
 
     def stream(self, query: str, context: str, sources: list[str]):
         """
         Sync generator — yields SSE-compatible event dicts.
         Streams tokens from Groq, then yields the final parsed JSON explanation.
         """
-        model = get_model()
         prompt = RAG_PROMPT_TEMPLATE.format(context=context, query=query)
-
         messages = [
             SystemMessage(content=SYSTEM_PROMPT),
             HumanMessage(content=prompt),
         ]
 
         full_text = ""
-        for chunk in model.stream(messages):
-            token = chunk.content
-            if token:
-                full_text += token
-                yield {"type": "chunk", "content": token}
+        success = False
+
+        for m_name in FALLBACK_MODELS:
+            try:
+                model = get_model(m_name)
+                for chunk in model.stream(messages):
+                    token = chunk.content
+                    if token:
+                        full_text += token
+                        yield {"type": "chunk", "content": token}
+                success = True
+                break
+            except Exception:
+                full_text = ""
+                continue
+
+        if not success:
+            yield {
+                "type": "error",
+                "message": "Failed to connect to Groq inference backend."
+            }
+            return
 
         # Parse and yield final result
         raw = _clean_json(full_text)

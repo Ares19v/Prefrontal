@@ -1,0 +1,407 @@
+[
+  {
+    "id": 1,
+    "category": "Public Speaking Fear",
+    "query": "Why am I terrified of public speaking in front of large crowds?",
+    "retrieval_ms": 1386,
+    "total_lat": 6209.1,
+    "sources_count": 3,
+    "sources_str": "Why Zebras Don't Get Ulcers \u2014 Sapolsky, Behave \u2014 Sapolsky",
+    "explanation": {
+      "title": "Social Evaluation Anxiety",
+      "modern_trigger": "Standing before a large audience, delivering a speech, or even thinking about speaking in front of many people",
+      "ancestral_mechanism": "In early human groups, being judged or rejected by peers could threaten survival by limiting access to resources, mates, and safety. Public speaking is a form of social evaluation that exposes status and competence, so the brain evolved to be hypervigilant to potential negative judgments in group settings.",
+      "brain_chemistry": "The amygdala and medial prefrontal cortex activate, releasing cortisol and adrenaline, while dopamine signals threat of social rejection. These chemicals heighten arousal and prepare the body for fight or flight, ensuring rapid response to perceived social threat.",
+      "the_insight": "Your fear isn\u2019t about the words you\u2019ll say; it\u2019s your brain\u2019s ancient alarm that warns you of a possible social threat that could cost you safety or mates. Recognizing this makes the anxiety feel like a relic, not a flaw.",
+      "confidence": "high",
+      "sources": [
+        "affiliation, reconciliation, empathy, and altruism?",
+        "amygdala hyperreactivity study"
+      ]
+    },
+    "headline": "Social Evaluation Anxiety",
+    "status": "PASS"
+  },
+  {
+    "id": 2,
+    "category": "Digital Doomscrolling",
+    "query": "Why can't I stop doomscrolling on social media late at night?",
+    "retrieval_ms": 319,
+    "total_lat": 3756.2,
+    "sources_count": 3,
+    "sources_str": "Why Zebras Don't Get Ulcers \u2014 Sapolsky, Behave \u2014 Sapolsky",
+    "explanation": {
+      "title": "Nighttime Doomscrolling",
+      "modern_trigger": "Scrolling through negative or scary news on Twitter, news apps, or trending tragedies late at night.",
+      "ancestral_mechanism": "In ancestral environments, threats were unpredictable and could arise at any time. Our ancestors benefited from hyper\u2011vigilance\u2014actively seeking information about potential dangers to prepare and avoid surprise attacks. This drive to gather threat information was reinforced over tens of thousands of years in variable, high\u2011risk landscapes.",
+      "brain_chemistry": "The amygdala and medial prefrontal cortex are activated, releasing cortisol and norepinephrine that heighten attention and memory consolidation. This neurochemical cocktail keeps the brain in a state of heightened alertness, making it difficult to disengage from threat signals.",
+      "the_insight": "Your brain isn\u2019t craving doom for pleasure; it\u2019s wired to stay on guard. In the digital age, the endless stream of bad news mimics the old world\u2019s unpredictable dangers, so your threat\u2011monitoring system keeps firing. Recognizing this makes the compulsion feel less like a flaw and more like an evolutionary relic that just needs a new, calmer outlet.",
+      "confidence": "high",
+      "sources": [
+        "Retrieved context"
+      ]
+    },
+    "headline": "Nighttime Doomscrolling",
+    "status": "PASS"
+  },
+  {
+    "id": 3,
+    "category": "Imposter Syndrome",
+    "query": "Why do I constantly feel like an intellectual fraud in meetings?",
+    "retrieval_ms": 364,
+    "total_lat": 3722.6,
+    "sources_count": 3,
+    "sources_str": "Why Zebras Don't Get Ulcers \u2014 Sapolsky, Behave \u2014 Sapolsky",
+    "explanation": {
+      "title": "Imposter Syndrome in Meetings",
+      "modern_trigger": "Starting a new job, promotion, or any high\u2011stakes meeting where you feel you must prove yourself",
+      "ancestral_mechanism": "In small, hierarchically organized hunter\u2011gatherer groups, challenging a dominant alpha could provoke lethal retaliation. An internal check that signals humility helped avoid provoking the alpha\u2019s aggression, preserving group cohesion and personal safety. This status\u2011signaling mechanism evolved over tens of thousands of years of social living.",
+      "brain_chemistry": "The prefrontal cortex and anterior cingulate cortex monitor social status and self\u2011evaluation, releasing cortisol in response to perceived threat and lowering serotonin to dampen confidence. This neurochemical pattern reinforces the submissive signal and reduces the likelihood of overt conflict.",
+      "the_insight": "Your feeling of fraudulence isn\u2019t a flaw\u2014it\u2019s your brain\u2019s ancient alarm system, tuned to keep you from stepping into a fight you can\u2019t win. Recognizing it as a survival strategy turns anxiety into a protective cue, not a personal failure.",
+      "confidence": "high",
+      "sources": [
+        "Why Zebras Don't Get Ulcers \u2014 Sapolsky",
+        "Behave \u2014 Sapolsky",
+        "Prefrontal Seed Data"
+      ]
+    },
+    "headline": "Imposter Syndrome in Meetings",
+    "status": "PASS"
+  },
+  {
+    "id": 4,
+    "category": "Sugar/Fat Cravings",
+    "query": "Why do I crave sugary, calorie-dense foods when I am stressed?",
+    "retrieval_ms": 350,
+    "total_lat": 12054.2,
+    "sources_count": 3,
+    "sources_str": "Why Zebras Don't Get Ulcers \u2014 Sapolsky, The Story of the Human Body \u2014 Lieberman",
+    "explanation": {},
+    "headline": "Evolutionary Mismatch",
+    "status": "FAIL: Failed to parse model output as JSON"
+  },
+  {
+    "id": 5,
+    "category": "Rejection Sensitivity",
+    "query": "Why does being ghosted or socially rejected feel like physical pain?",
+    "retrieval_ms": 1333,
+    "total_lat": 18513.9,
+    "sources_count": 3,
+    "sources_str": "Why Zebras Don't Get Ulcers \u2014 Sapolsky, Behave \u2014 Sapolsky",
+    "explanation": {
+      "title": "Social Exclusion Pain",
+      "modern_trigger": "Being left on read, getting no likes on a post, or being cut out of a group chat",
+      "ancestral_mechanism": "For most of human history, social rejection meant loss of protection, resources, and mates\u2014essentially death.  Our ancestors who were excluded could not hunt, defend themselves, or raise offspring, so the brain evolved to treat social exclusion as a survival threat as severe as physical injury.  This mechanism operated in small, tightly knit groups over tens of thousands of years.",
+      "brain_chemistry": "When we feel rejected, the anterior cingulate cortex (ACC) lights up just as it does for physical pain, while the amygdala amplifies threat signals.  Cortisol and other stress hormones surge, reinforcing the feeling of hurt and motivating us to seek reintegration.  These neural circuits were honed to protect the individual from the life\u2011threatening consequences of social isolation.",
+      "the_insight": "Your \u2018heartache\u2019 is not a flaw but a built\u2011in alarm system that once kept you safe inside the tribe.  Every time you feel the sting of rejection, your brain is firing 200,000 years of evolutionary survival circuitry\u2014so the pain makes perfect sense.  Recognizing this can turn a crippling fear into a clear signal: you need connection, not a flaw in yourself.",
+      "confidence": "high",
+      "sources": [
+        "Eisenberger et al., 2003",
+        "Eisenberger et al., 2012",
+        "Sebastian et al., 2011"
+      ]
+    },
+    "headline": "Social Exclusion Pain",
+    "status": "PASS"
+  },
+  {
+    "id": 6,
+    "category": "Procrastination",
+    "query": "Why do I delay working on my most important long-term goals for quick dopamine?",
+    "retrieval_ms": 0,
+    "total_lat": 12759.1,
+    "sources_count": 0,
+    "sources_str": "None",
+    "explanation": {},
+    "headline": "Evolutionary Mismatch",
+    "status": "FAIL: (\"Connection broken: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)\", ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+  },
+  {
+    "id": 7,
+    "category": "Loss Aversion",
+    "query": "Why does losing $100 feel twice as painful as gaining $100 feels good?",
+    "retrieval_ms": 0,
+    "total_lat": 4117.0,
+    "sources_count": 0,
+    "sources_str": "None",
+    "explanation": {},
+    "headline": "Evolutionary Mismatch",
+    "status": "FAIL: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/explain (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+  },
+  {
+    "id": 8,
+    "category": "Status Seeking",
+    "query": "Why do people buy luxury brands and expensive watches they cannot afford?",
+    "retrieval_ms": 0,
+    "total_lat": 4113.7,
+    "sources_count": 0,
+    "sources_str": "None",
+    "explanation": {},
+    "headline": "Evolutionary Mismatch",
+    "status": "FAIL: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/explain (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+  },
+  {
+    "id": 9,
+    "category": "Tribal Polarization",
+    "query": "Why do people become intensely hostile toward opposing political groups?",
+    "retrieval_ms": 0,
+    "total_lat": 4103.9,
+    "sources_count": 0,
+    "sources_str": "None",
+    "explanation": {},
+    "headline": "Evolutionary Mismatch",
+    "status": "FAIL: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/explain (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+  },
+  {
+    "id": 10,
+    "category": "Nighttime Anxiety",
+    "query": "Why do my thoughts spiral with worst-case scenarios when trying to sleep?",
+    "retrieval_ms": 1396,
+    "total_lat": 5963.6,
+    "sources_count": 1,
+    "sources_str": "Why Zebras Don't Get Ulcers \u2014 Sapolsky",
+    "explanation": {
+      "title": "Nighttime Catastrophe Spiral",
+      "modern_trigger": "When lying awake, the mind starts worrying about missed deadlines, health, or future failures, especially when the body signals the need for sleep.",
+      "ancestral_mechanism": "In ancestral environments, staying awake during dangerous times (night, predators) required constant vigilance. The brain\u2019s threat-detection system amplified potential dangers to ensure survival, and this heightened alertness persisted into the pre-sleep state, causing the mind to generate worst\u2011case scenarios to preempt threats.",
+      "brain_chemistry": "The amygdala and anterior cingulate cortex become hyperactive, releasing cortisol and norepinephrine. These chemicals heighten arousal and keep the body in a state of readiness, making it hard to relax into sleep.",
+      "the_insight": "Your brain is wired to protect you from unseen dangers; the spiraling thoughts are just its way of rehearsing survival plans. Recognizing this can help you reframe them as an automatic defense rather than a personal flaw.",
+      "confidence": "high",
+      "sources": [
+        "Ilana Hairston"
+      ]
+    },
+    "headline": "Nighttime Catastrophe Spiral",
+    "status": "PASS"
+  },
+  {
+    "id": 11,
+    "category": "Sunk Cost Fallacy",
+    "query": "Why do I stay in dead-end projects or relationships even when knowing they fail?",
+    "retrieval_ms": 350,
+    "total_lat": 3437.9,
+    "sources_count": 3,
+    "sources_str": "Behave \u2014 Sapolsky, Prefrontal Seed Data",
+    "explanation": {
+      "title": "Attachment to Dead-End Projects",
+      "modern_trigger": "Remaining in a failing job, partnership, or project despite clear signs of stagnation or harm",
+      "ancestral_mechanism": "In early human societies, group cohesion and stable social bonds were essential for survival and reproductive success. The attachment system evolved to prioritize maintaining relationships\u2014even when they were costly\u2014because leaving a group could expose individuals to predation, loss of resources, or social ostracism. This bias toward staying with a familiar partner or group, even if it offered negative reinforcement, helped ensure safety and access to communal support over thousands of years.",
+      "brain_chemistry": "The amygdala and ventromedial prefrontal cortex evaluate threat versus reward, while the nucleus accumbens and dopaminergic pathways reinforce the perceived safety of familiar bonds. Oxytocin and vasopressin promote social bonding, whereas cortisol and norepinephrine heighten vigilance against perceived abandonment. This neurochemical cocktail keeps the brain in a state of \u201cstay or fight\u201d rather than \u201cleave,\u201d even when the relationship is objectively harmful.",
+      "the_insight": "Your tendency to cling to dead\u2011end projects is not a flaw but a relic of a system that once kept you safe and connected. It\u2019s your brain\u2019s way of avoiding the high\u2011stakes risk of isolation. Recognizing this can turn a source of distress into a powerful cue: you can consciously decide to re\u2011balance the old survival drive with modern realities, freeing yourself from the ancient safety net that no longer serves you.",
+      "confidence": "high",
+      "sources": [
+        "Attachment to negative reinforcement context",
+        "Codependency and low self-esteem context"
+      ]
+    },
+    "headline": "Attachment to Dead-End Projects",
+    "status": "PASS"
+  },
+  {
+    "id": 12,
+    "category": "Negativity Bias",
+    "query": "Why do I remember a single insult more vividly than ten compliments?",
+    "retrieval_ms": 349,
+    "total_lat": 8933.1,
+    "sources_count": 4,
+    "sources_str": "The Selfish Gene \u2014 Dawkins, Prefrontal Seed Data",
+    "explanation": {
+      "title": "Negative Bias Memory",
+      "modern_trigger": "A single mean comment on a post or a single \"needs improvement\" on a review.",
+      "ancestral_mechanism": "In ancestral environments, missing a harmful stimulus (e.g., a snake) could be fatal, whereas missing a beneficial one (e.g., a berry) was a minor loss. Our brains evolved to prioritize negative information to avoid lethal threats. This bias helped ancestors quickly detect and respond to danger, increasing survival chances over tens of thousands of years.",
+      "brain_chemistry": "The amygdala lights up immediately to negative stimuli, triggering rapid threat processing. Dopamine and norepinephrine surge, heightening arousal and memory consolidation for the insult, while positive cues receive less neural priority.",
+      "the_insight": "Your mind isn't depressed; it's a survival alarm system tuned to keep you safe. The vivid memory of the insult is your brain's way of ensuring you never overlook a potential danger again. Recognizing this makes the reaction feel natural, not pathological.",
+      "confidence": "high",
+      "sources": [
+        "Retrieved context"
+      ]
+    },
+    "headline": "Negative Bias Memory",
+    "status": "PASS"
+  },
+  {
+    "id": 13,
+    "category": "Social FOMO",
+    "query": "Why do I get anxious seeing friends hanging out without me on Instagram?",
+    "retrieval_ms": 1296,
+    "total_lat": 63072.1,
+    "sources_count": 2,
+    "sources_str": "Prefrontal Seed Data, Why Zebras Don't Get Ulcers \u2014 Sapolsky",
+    "explanation": {
+      "title": "Fear of Missing Out",
+      "modern_trigger": "Scrolling through Instagram and seeing friends posting about parties or new experiences you weren\u2019t part of",
+      "ancestral_mechanism": "In ancestral environments staying informed about group activities was vital for survival. Missing out on gatherings could mean missing food, mates, or danger warnings. The brain evolved to flag being out of the loop as a threat, prompting rapid rejoining.",
+      "brain_chemistry": "The amygdala signals threat, while the medial prefrontal cortex evaluates social context. This circuit releases cortisol, heightening arousal and motivating the individual to re\u2011engage. The cortisol surge reinforces the urgency to stay connected.",
+      "the_insight": "What feels like envy is actually a deep\u2011rooted social\u2011monitoring instinct. Your brain is wired to treat any gap in group knowledge as a vulnerability. Recognizing this makes the anxiety feel like a protective reflex, not a flaw.",
+      "confidence": "high",
+      "sources": [
+        "FOMO context",
+        "Social isolation context"
+      ]
+    },
+    "headline": "Fear of Missing Out",
+    "status": "PASS"
+  },
+  {
+    "id": 14,
+    "category": "Gossip Addiction",
+    "query": "Why is talking about other people's social drama so universally compelling?",
+    "retrieval_ms": 1339,
+    "total_lat": 49235.0,
+    "sources_count": 2,
+    "sources_str": "Behave \u2014 Sapolsky, Prefrontal Seed Data",
+    "explanation": {
+      "title": "Gossip: Social Intelligence Engine",
+      "modern_trigger": "Celebrity news, office drama, or scrolling through social updates",
+      "ancestral_mechanism": "In small, interdependent groups, knowing who was trustworthy, who was cheating, and who held power was essential for forming alliances and avoiding betrayal. Gossip functioned as a low-cost, fast way to share reputational information, allowing individuals to navigate complex social hierarchies and secure resources. Over tens of thousands of years, this skill became a cornerstone of human cooperation and group cohesion.",
+      "brain_chemistry": "The ventromedial prefrontal cortex evaluates social information while the ventral striatum releases dopamine when new reputational insights are gained, reinforcing the behavior. This neural circuitry links the reward of social knowledge to the survival advantage of accurate social monitoring.",
+      "the_insight": "Your urge to talk about others isn\u2019t idle chatter\u2014it\u2019s your brain\u2019s built-in reputation tracker firing. Recognizing that this drive helped ancestors survive in tight-knit groups turns the compulsion into a natural, adaptive tool for navigating modern social landscapes.",
+      "confidence": "high",
+      "sources": [
+        "Anthropological study of gossip",
+        "Polly Wiessner University of Utah study",
+        "Prefrontal Cortex reward system"
+      ]
+    },
+    "headline": "Gossip: Social Intelligence Engine",
+    "status": "PASS"
+  },
+  {
+    "id": 15,
+    "category": "In-group Favoritism",
+    "query": "Why are humans naturally biased toward helping family over strangers?",
+    "retrieval_ms": 1305,
+    "total_lat": 24422.8,
+    "sources_count": 2,
+    "sources_str": "The Selfish Gene \u2014 Dawkins, Behave \u2014 Sapolsky",
+    "explanation": {
+      "title": "Kin Bias in Altruism",
+      "modern_trigger": "Feeling compelled to help a relative more than a stranger, such as offering to babysit a sibling instead of a neighbor",
+      "ancestral_mechanism": "In hunter\u2011gatherer societies, helping close kin increased inclusive fitness because relatives share many genes. By investing time and resources in kin, individuals ensured the survival of shared alleles, providing a direct evolutionary advantage. This bias emerged over tens of thousands of years of natural selection.",
+      "brain_chemistry": "When deciding to help kin, the ventromedial prefrontal cortex and nucleus accumbens activate, releasing oxytocin and dopamine. These neurochemicals reinforce prosocial behavior toward genetically related individuals, linking reward circuitry to kin selection.",
+      "the_insight": "So when you feel a surge of generosity for a family member, your brain is literally wired to favor those who share your DNA. It\u2019s not a flaw\u2014it's a survival strategy that once kept our ancestors alive. Recognizing this makes the bias feel natural, not irrational.",
+      "confidence": "high",
+      "sources": [
+        "Hamilton's rule",
+        "incest taboos",
+        "parental altruism"
+      ]
+    },
+    "headline": "Kin Bias in Altruism",
+    "status": "PASS"
+  },
+  {
+    "id": 16,
+    "category": "Stranger Wariness",
+    "query": "Why do people instinctively feel cautious around unfamiliar outsiders?",
+    "retrieval_ms": 1346,
+    "total_lat": 28308.0,
+    "sources_count": 2,
+    "sources_str": "Prefrontal Seed Data, Behave \u2014 Sapolsky",
+    "explanation": {
+      "title": "Unfamiliar Outsider Caution",
+      "modern_trigger": "Meeting someone from a different cultural group, new coworker, or stranger in a public space",
+      "ancestral_mechanism": "In ancestral hunter\u2011gatherer societies, unfamiliar outsiders represented potential competitors for scarce resources, possible carriers of disease, and a threat to group cohesion.  Detecting and avoiding such strangers helped prevent costly conflicts, disease spread, and loss of group status, thereby increasing survival odds over thousands of generations.",
+      "brain_chemistry": "The amygdala and anterior cingulate cortex rapidly fire when encountering unfamiliar faces, triggering cortisol release and heightened vigilance.  Simultaneously, the prefrontal cortex attempts to regulate this response, but the initial surge of cortisol and dopamine reinforces avoidance behavior.",
+      "the_insight": "Your instinctive wariness of strangers is not a flaw\u2014it\u2019s a built\u2011in safety net that once served to keep your tribe safe from hidden threats.  Recognizing this ancient wiring can turn a feeling of anxiety into a conscious, adaptive strategy rather than a self\u2011defeating doubt.",
+      "confidence": "high",
+      "sources": [
+        "Xenophobia Alarms Text",
+        "Social Dominance Orientation Study"
+      ]
+    },
+    "headline": "Unfamiliar Outsider Caution",
+    "status": "PASS"
+  },
+  {
+    "id": 17,
+    "category": "Morning Grogginess",
+    "query": "Why is waking up to an alarm clock so difficult even after 8 hours of sleep?",
+    "retrieval_ms": 1323,
+    "total_lat": 25640.1,
+    "sources_count": 2,
+    "sources_str": "The Story of the Human Body \u2014 Lieberman, Why Zebras Don't Get Ulcers \u2014 Sapolsky",
+    "explanation": {
+      "title": "Alarm Clock Wake\u2011Up Stress",
+      "modern_trigger": "An alarm clock rings abruptly at a set time, forcing you to wake up suddenly even after a full night\u2019s sleep.",
+      "ancestral_mechanism": "Early humans relied on the natural rise of cortisol and other stress hormones at dawn to mobilize energy for daily tasks. This circadian surge helped terminate sleep and prepare the body for the day\u2019s challenges. An alarm that rings before this natural cue disrupts the timing, causing a mismatch between internal readiness and external demand.",
+      "brain_chemistry": "The hypothalamic suprachiasmatic nucleus signals the pituitary to release CRH, which triggers ACTH release and subsequent glucocorticoid (cortisol) secretion. Elevated cortisol activates the amygdala and prefrontal cortex, increasing arousal and anxiety. The sudden auditory stimulus also engages the locus coeruleus, releasing norepinephrine to further heighten alertness.",
+      "the_insight": "Your brain is wired to wake when the body\u2019s stress hormones naturally rise, not when a digital alarm blares. The abrupt jolt feels stressful because it forces your HPA axis into a state of readiness before it\u2019s biologically primed. Recognizing this mismatch lets you reframe the alarm as an artificial cue that your body isn\u2019t prepared for, making the discomfort feel less alien and more understandable.",
+      "confidence": "high",
+      "sources": [
+        "Retrieved context"
+      ]
+    },
+    "headline": "Alarm Clock Wake\u2011Up Stress",
+    "status": "PASS"
+  },
+  {
+    "id": 18,
+    "category": "Conflict Hyper-vigilance",
+    "query": "Why does my heart race for hours after a minor disagreement at work?",
+    "retrieval_ms": 1327,
+    "total_lat": 42166.0,
+    "sources_count": 1,
+    "sources_str": "Why Zebras Don't Get Ulcers \u2014 Sapolsky",
+    "explanation": {
+      "title": "Post-Conflict Heart Racing",
+      "modern_trigger": "A minor disagreement or conflict with a coworker that triggers emotional upset",
+      "ancestral_mechanism": "In ancestral environments, sudden interpersonal conflict could signal imminent threat or loss of group cohesion. The body\u2019s fight-or-flight response, primed to mobilize energy, increased heart rate to supply muscles and prepare for rapid escape or confrontation. This rapid cardiovascular shift helped ancestors survive in high-threat, low-resource settings over tens of thousands of years.",
+      "brain_chemistry": "The amygdala detects threat cues and signals the hypothalamus, which activates the sympathetic nervous system via the locus coeruleus and adrenal medulla. Norepinephrine and epinephrine release raise heart rate and blood pressure, while the anterior cingulate cortex monitors conflict and amplifies autonomic output. These circuits evolved to synchronize cardiovascular function with perceived danger.",
+      "the_insight": "Your racing heart is your body\u2019s ancient alarm system still tuned to pick up social threats. Even a small disagreement feels like a potential loss or attack, so your brain ramps up the same fight-or-flight machinery that once kept your ancestors alive. Recognizing this can help you see the reaction as a natural, not pathological, response.",
+      "confidence": "high",
+      "sources": [
+        "Why_Zebras"
+      ]
+    },
+    "headline": "Post-Conflict Heart Racing",
+    "status": "PASS"
+  },
+  {
+    "id": 19,
+    "category": "Public Altruism",
+    "query": "Why do people feel compelled to perform charitable acts publicly?",
+    "retrieval_ms": 1380,
+    "total_lat": 28554.1,
+    "sources_count": 1,
+    "sources_str": "Behave \u2014 Sapolsky",
+    "explanation": {
+      "title": "Public Altruism Drive",
+      "modern_trigger": "Seeing an opportunity to donate or help in front of others, such as at a charity event, a social media fundraiser, or a community gathering where peers are watching.",
+      "ancestral_mechanism": "In small hunter\u2011gatherer bands, publicly generous acts signaled cooperation and trustworthiness, boosting group cohesion and reciprocal support. By displaying generosity, individuals gained social status and future aid, protecting against resource scarcity and social exclusion over thousands of years.",
+      "brain_chemistry": "When an observer is present, the ventral striatum and medial prefrontal cortex fire, releasing dopamine and oxytocin. These reward pathways link reputation gains to intrinsic pleasure, reinforcing the behavior.",
+      "the_insight": "Your brain treats a public donation like a win in a game of social currency\u2014each act earns you reputation points that pay off in future help. Understanding this makes the urge feel natural, not selfish.",
+      "confidence": "high",
+      "sources": [
+        "Maimonides",
+        "dopamine activation studies on charitable acts",
+        "recent empathy brain studies"
+      ]
+    },
+    "headline": "Public Altruism Drive",
+    "status": "PASS"
+  },
+  {
+    "id": 20,
+    "category": "Peer Envy",
+    "query": "Why does a close friend's sudden success secretly sting even when I care about them?",
+    "retrieval_ms": 1326,
+    "total_lat": 31380.3,
+    "sources_count": 2,
+    "sources_str": "Behave \u2014 Sapolsky, Why Zebras Don't Get Ulcers \u2014 Sapolsky",
+    "explanation": {
+      "title": "Friendship Envy",
+      "modern_trigger": "Seeing a close friend achieve a milestone or recognition that you feel you missed out on.",
+      "ancestral_mechanism": "In hunter\u2011gatherer groups, status and resource access were critical for survival. Individuals who perceived a peer gaining prestige or resources felt a threat to their own standing, prompting a competitive drive to maintain group position. This mechanism helped ensure access to food, mates, and safety.",
+      "brain_chemistry": "The anterior cingulate cortex (ACC) signals the emotional salience of the comparison, while the ventral striatum and mesolimbic dopamine system reward the perceived loss of status. This neural pattern mirrors the response to direct threat, reinforcing avoidance or corrective action.",
+      "the_insight": "Your sting isn\u2019t a flaw\u2014it\u2019s your brain\u2019s ancient alarm system. It\u2019s wired to keep you in the social hierarchy, so when a friend\u2019s success feels like a shift in that hierarchy, your body reacts as if your own survival were at stake. Recognizing this makes the feeling feel less like a personal failing and more like a natural, adaptive cue.",
+      "confidence": "high",
+      "sources": [
+        "Behave \u2014 Sapolsky",
+        "Why Zebras Don't Get Ulcers \u2014 Sapolsky"
+      ]
+    },
+    "headline": "Friendship Envy",
+    "status": "PASS"
+  }
+]
