@@ -37,10 +37,6 @@ dist/
 chroma_db/
 .pinecone/
 
-# Knowledge base PDFs (large files)
-knowledge_base/books/*.pdf
-knowledge_base/papers/*.pdf
-
 # OS
 .DS_Store
 .DS_Store?
