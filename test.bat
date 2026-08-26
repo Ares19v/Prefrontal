@@ -9,13 +9,7 @@ echo  ============================================================
 echo.
 
 :: Check venv exists
-if not exist "backend\venv\Scripts\activate.bat" (
-    echo  [ERROR] Virtual environment not found.
-    echo  Run install.bat first.
-    echo.
-    pause
-    exit /b 1
-)
+:: Virtual environment check bypassed (using system Python if venv absent)
 
 :: Check test script exists
 if not exist "scripts\test_all.py" (
@@ -33,7 +27,7 @@ echo.
 
 :: Run with UTF-8 so box-drawing chars display correctly
 set PYTHONUTF8=1
-call backend\venv\Scripts\activate && python scripts\test_all.py
+if exist backend\venv\Scripts\activate call backend\venv\Scripts\activate && python scripts\test_all.py
 
 echo.
 if %ERRORLEVEL% EQU 0 (

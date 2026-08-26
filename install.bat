@@ -37,7 +37,7 @@ if exist "backend\venv" (
 :: ── Step 3: Install Python dependencies ─────────────────────────
 echo.
 echo  [3/5] Installing Python dependencies (this may take a few minutes)...
-call backend\venv\Scripts\activate
+if exist backend\venv\Scripts\activate call backend\venv\Scripts\activate
 pip install --upgrade pip -q
 pip install -r backend\requirements.txt
 
