@@ -20,5 +20,6 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
     "typescript": "^5"
-  }
+  },
+  "description": "Evolutionary psychology interactive visualizer tracing modern phobias and cognitive biases to ancestral survival mechanisms."
 }
