@@ -173,4 +173,4 @@ Prefrontal can be fully orchestrated using Docker Compose. This starts both the 
 
 ---
 
-© 2025 Devansh Tyagi (Ares19v). All Rights Reserved.
+© 2026 Devansh Tyagi (Ares19v). All Rights Reserved.
