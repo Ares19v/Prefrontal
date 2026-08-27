@@ -12,7 +12,6 @@
 [![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=flat&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![Groq](https://img.shields.io/badge/LLM-Groq%20Llama%203.3-orange?style=flat)](https://groq.com/)
 [![Pinecone](https://img.shields.io/badge/VectorDB-Pinecone-2D3748?style=flat&logo=pinecone&logoColor=white)](https://www.pinecone.io/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 [**Installation →**](#installation)&nbsp;&nbsp;|&nbsp;&nbsp;[**Architecture →**](#architecture)&nbsp;&nbsp;|&nbsp;&nbsp;[**Tech Stack →**](#tech-stack)
 
@@ -74,7 +73,7 @@ The system employs a **Retrieval-Augmented Generation (RAG)** architecture. When
 ## Tech Stack
 
 | Layer | Technology | Purpose |
-|-------|-----------|---------|
+|-------|-----------|----------|
 | **Frontend** | Next.js 15 (App Router) | High-performance, SEO-friendly UI with React 19. |
 | **Backend** | FastAPI (Python 3.11+) | Asynchronous API for low-latency RAG processing. |
 | **LLM Engine** | Groq (Llama-3.3-70b) | Ultra-fast inference with 70B parameter precision. |
@@ -174,7 +173,12 @@ Prefrontal can be fully orchestrated using Docker Compose. This starts both the 
 
 ---
 
----
 <p align="center">
   Made by Devansh Tyagi @ 2026
 </p>
+
+---
+
+© 2025 Devansh Tyagi (Ares19v). All Rights Reserved.
+
+Unauthorized copying, modification, distribution, or use of this project or any of its components, in whole or in part, without explicit written permission from the author is strictly prohibited.
